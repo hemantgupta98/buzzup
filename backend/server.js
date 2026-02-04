@@ -1,7 +1,7 @@
-require("dotenv").config();
+require("dotenv").config({ path: "./process.env" });
 const express = require("express");
 const cors = require("cors");
-const connectDB = require("./config/db");
+const connectDB = require("./db");
 
 connectDB();
 const app = express();
